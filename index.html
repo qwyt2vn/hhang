@@ -31,11 +31,21 @@
     <h2 class="name">Công Cường & Hà Hằng</h2>
     <p class="invite">Trân trọng mời <strong id="guestName">{{ guest_name }}</strong></p>
 
-    <div class="date">
-      <div class="small">CHỦ NHẬT</div>
-      <div class="big">30</div>
-      <div class="small">THÁNG 11<br>NĂM 2025</div>
-    </div>
+    <div class="date" data-event-time="2025-11-30T10:00:00">
+      <!-- giờ trước -->
+      <div class="time">
+	    <div class="small-time">Vào lúc</div>
+        <div class="big-time" id="eventTimeDisplay">10:00'</div>
+      </div>
+
+      <div class="weekday small" id="weekdayLabel">CHỦ NHẬT</div>
+
+      <!-- ngày lớn -->
+      <div class="big" id="dayNumber">30</div>
+
+      <!-- phần chứa tháng + năm -->
+      <div class="small" id="monthYear">THÁNG 11<br>NĂM 2025</div>
+      </div>
 
     <div class="countdown" id="countdown"></div>
 
